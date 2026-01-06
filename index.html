@@ -484,7 +484,7 @@
               setShowAnimation(true);
             } else {
               setFeedback(`程式有誤！請再檢查。(剩餘嘗試機會：${3 - newAttempts})`);
-              setTotalScore(prev => Math.max(0, prev - 2));
+              // Removed score deduction as requested
             }
           }
         };
